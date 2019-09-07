@@ -44,7 +44,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_PREBUILT_KERNEL := device/xiaomi/santoni/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/xiaomi/santoni/prebuilt/kernel
 
 # Encryption
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
@@ -73,6 +73,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
+
+#System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # TWRP Configuration
 TW_SCREEN_BLANK_ON_BOOT := true
